@@ -1,0 +1,160 @@
+.m_header {
+    padding: 1px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 4px solid rgb(90 25 13);
+    border-bottom: 1px solid rgb(90 25 13);
+    margin: 30px 0px;
+}
+
+.m_header a {
+    text-decoration: none;
+    color: rgb(90 25 13);
+    font-size: 20px;
+}
+
+.m_wrapper {
+    margin-top: 30px;
+    display: flex;
+}
+
+.money_left_cont {
+    flex: 0.3;
+    padding-right: 20px;
+    border-right: 1px solid #e2e2e2;
+}
+
+.money_left_card {
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 30px;
+}
+
+.left_img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.cate {
+    font-size: 14px;
+    text-decoration: none;
+    color: #444;
+    font-weight: 400;
+}
+
+.left_intro {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+.left_intro:hover {
+    border-bottom: 1px solid #444;
+}
+
+.author {
+    font-size: 14px;
+    color: #555;
+}
+
+.money_right_cont {
+    flex: 0.7;
+    padding-left: 20px;
+}
+
+.money_right_card {
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 30px;
+}
+
+.right_img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.right_intro {
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+}
+
+.right_intro:hover {
+    border-bottom: 1px solid #444;
+}
+
+.sub_heading_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.main_sub {
+    flex: 0.5;
+    padding-right: 20px;
+    border-right: 1px solid #e2e2e2;
+}
+
+.sub_intro {
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.sub_intro:hover {
+    border-bottom: 1px solid #444;
+}
+
+.main_sub_img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.child_sub_wrapper {
+    flex: 0.5;
+}
+
+.child_cont {
+    padding: 0px 20px;
+}
+
+.child_flex {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+}
+
+.child_1 {
+    flex: 0.5;
+    margin-right: 30px;
+}
+
+.child_2 {
+    flex: 0.5;
+}
+
+.child_intro {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.child_intro:hover {
+    border-bottom: 1px solid #444;
+}
+
+.child_flex a:hover {
+    border-bottom: 1px solid #737373;
+}
+
+.child_img {
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+}

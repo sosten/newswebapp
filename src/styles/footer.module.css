@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc;
+    border-top: 1px solid #5555;
+    padding: 4px;
+}
+
+.footer p, .footer a {
+    font-size: 14px;
+    color: #444;
+}
+
+.footer a {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 30px;
+}

@@ -16,8 +16,8 @@ function Lifestyle() {
                 <div className={style.cont_flex}>
                     <div className={style.left_cont}>
                         <img src={iris} alt="iris" className={style.left_img} />
-                        <p><Link to={'/lifestyle'} className={style.cate}>Lifestyle</Link></p>
-                        <h4><Link to={'/lifestyle'} className={style.intro}>IRS To Drop Facial Scan ID.me Verification For Online Accounts</Link></h4>
+                        <p><Link to={'/lifestyle-detail'} className={style.cate}>Lifestyle</Link></p>
+                        <h4><Link to={'/lifestyle-detail'} className={style.intro}>IRS To Drop Facial Scan ID.me Verification For Online Accounts</Link></h4>
                         <p className={style.author}>By <b>Mandona</b> <span style={{color: '#737373', fontSize: 12}}>News Yatu staff</span></p>
                         <div>
                             <div></div>

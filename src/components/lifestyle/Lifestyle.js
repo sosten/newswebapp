@@ -19,10 +19,6 @@ function Lifestyle() {
                         <p><Link to={'/lifestyle-detail'} className={style.cate}>Lifestyle</Link></p>
                         <h4><Link to={'/lifestyle-detail'} className={style.intro}>IRS To Drop Facial Scan ID.me Verification For Online Accounts</Link></h4>
                         <p className={style.author}>By <b>Mandona</b> <span style={{color: '#737373', fontSize: 12}}>News Yatu staff</span></p>
-                        <div>
-                            <div></div>
-                            <div></div>
-                        </div>
                     </div>
                     <div className={style.right_cont}>
                         <div className={style.right_card}>
@@ -40,7 +36,6 @@ function Lifestyle() {
                     </div>
                 </div>
             </div>
-            
         </>
     );
 }

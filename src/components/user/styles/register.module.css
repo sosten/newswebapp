@@ -1,10 +1,19 @@
 .container {
     background-color: #9999;
-    height: 90.7vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 30px;
+    color: #333;
 }
 
 .form_flex {

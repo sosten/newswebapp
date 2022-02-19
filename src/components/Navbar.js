@@ -12,7 +12,7 @@ function Navbar() {
                 <Link to={'/'} style={{fontWeight: '600', color: '#fff'}}><span style={{backgroundColor: 'red', padding: 5, borderRadius: 2}}>NEWS</span> YATU</Link>
                 <div className={style.sign_in}>
                     <BiUserCircle color='#fff' size={24}/>
-                    <Link to={'/sign-in'}>Sign in</Link> <sapn style={{display: 'inlineBlock', color: '#fff', marginLeft: 10}}> / </sapn>
+                    <Link to={'/sign-in'}>Sign in</Link> <span style={{display: 'inlineBlock', color: '#fff', marginLeft: 10}}> / </span>
                     <Link to={'/sign-up'}>Sign up</Link>
                 </div>
             </div>
@@ -29,7 +29,7 @@ function Navbar() {
                 </ul>
             </div>
             <form className={style.search_form}>
-                <labe for='search'></labe>
+                <label htmlFor='search'></label>
                 <div className={style.form_flex}>
                     <input type='text' placeholder='Search' id='search' />
                     <span className={style.search}>

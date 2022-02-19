@@ -7,11 +7,11 @@ const routeUrl = require('./routes/routes');
 const port = 5000;
 
 dotenv.config();
-mongoose.connect(process.env.DATABASE_ACCESS, ()=> console.log('Database is connected'))
+mongoose.connect(process.env.DATABASE_ACCESS, ()=> console.log('Database is connected'));
 
 //Middleware
-app.use(express.json()) //bodyParser
+app.use(express.json()); //body-parser
 app.use(cors());
-app.use('/api', routeUrl)
+app.use('/api', routeUrl);
 
-app.listen(port, () => console.log(`Server is running on port ${port}`))
+app.listen(port, () => console.log(`Server is running on port ${port}`));

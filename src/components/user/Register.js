@@ -1,5 +1,6 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import style from '../user/styles/register.module.css';
@@ -31,6 +32,37 @@ const Register = () => {
     setConfirmPassword(event.target.value)
   }
 
+  const comparePasswords = () =>{
+    if(password !== confirmPassword) {
+      alert('your passwords did not match');
+    }
+  }
+
+  const user = ({
+    firstName,
+    lastName,
+    email,
+    password,
+    confirmPassword,
+  })
+
+  const onSubmit = (event) => {
+    event.preventDefault();
+    comparePasswords()
+    
+    axios.post('http://localhost:5000/api/user', user)
+      .then(()=>{
+        window.location="/";
+      })
+      .catch(error =>{
+        console.log(error)
+        alert('Unable to Register. Check if all required fields on the form are filled')
+      })
+  }
+
+  useEffect(()=>{
+    axios.get('http://localhost:5000/api/getusers',)
+  })
   return (
     <>
       <div>
@@ -41,7 +73,7 @@ const Register = () => {
           <div className={style.header}>
             <h1>Sign Up</h1>
           </div>
-          <form onSubmit={(e) => e.preventDefault()} className={style.form}>
+          <form onSubmit={onSubmit} className={style.form}>
             <label htmlFor="fname" className={style.label}>First Name</label>
             <input 
               type="text" 
@@ -50,7 +82,8 @@ const Register = () => {
               value={firstName} 
               id='fname'
               onChange={handleFirstName} 
-              className={style.input} 
+              className={style.input}
+              required 
             />
 
             <label htmlFor="lname" className={style.label}>Last Name</label>
@@ -61,7 +94,8 @@ const Register = () => {
               value={lastName} 
               id='lname'
               onChange={handleLastName} 
-              className={style.input} 
+              className={style.input}
+              required 
             />
 
             <label htmlFor="email" className={style.label}>Email</label>
@@ -70,9 +104,10 @@ const Register = () => {
               placeholder='yourname@mail.com'
               name='email'
               value={email} 
-              id='lname'
+              id='email'
               onChange={handleEmail} 
-              className={style.input} 
+              className={style.input}
+              required 
             />
 
             <label htmlFor="pwd" className={style.label}>Password</label>
@@ -83,7 +118,8 @@ const Register = () => {
               value={password} 
               id='pwd'
               onChange={handlePassword} 
-              className={style.input} 
+              className={style.input}
+              required 
             />
 
             <label htmlFor="confirm-pwd" className={style.label}>Confirm Password</label>
@@ -94,7 +130,8 @@ const Register = () => {
               value={confirmPassword} 
               onChange={handleConfirmPassword}
               id='confirm-pwd' 
-              className={style.input} 
+              className={style.input}
+              required 
             />
 
             <input type="submit" value={"Sign Up"} className={style.btn} />

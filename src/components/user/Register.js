@@ -63,6 +63,7 @@ const Register = () => {
   useEffect(()=>{
     axios.get('http://localhost:5000/api/getusers',)
   })
+  
   return (
     <>
       <div>
@@ -100,7 +101,7 @@ const Register = () => {
 
             <label htmlFor="email" className={style.label}>Email</label>
             <input 
-              type="text" 
+              type="email" 
               placeholder='yourname@mail.com'
               name='email'
               value={email} 

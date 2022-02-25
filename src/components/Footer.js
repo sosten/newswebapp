@@ -10,19 +10,19 @@ function Footer() {
   return (
     <div className={style.footer}>
         <div>
-            <p>&#xa9;2022 News Yatu Media. All Rights Reserved</p>
+            <p>&#xa9;{new Date().getFullYear()} News Yatu Media. All Rights Reserved</p>
         </div>
         <div>
-          <Link to="/facebok"><RiFacebookBoxFill color='#777' size={22} /></Link>
-          <Link to="/twitter"><BsTwitter color='#777' size={22} /></Link>
-          <Link to="/youtube"><BsYoutube color='#777' size={22} /></Link>
-          <Link to="/instagram"><AiFillInstagram color='#777' size={22} /></Link>
+          <a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><RiFacebookBoxFill color='#777' size={22} /></a>
+          <a href="http://twitter.com" target="_blank" rel="noopener noreferrer"><BsTwitter color='#777' size={22} /></a>  
+          <a href="http://youtube.com" target="_blank" rel="noopener noreferrer"><BsYoutube color='#777' size={22} /></a>  
+          <a href="http://instagram" target="_blank" rel="noopener noreferrer"><AiFillInstagram color='#777' size={22} /></a>
         </div>
         <div>
-          <Link to="/contact">Contact Us</Link>
-            <Link to="/terms">Terms and Condition</Link>
-            <Link to="/policy">Privacy Policy</Link>
-            <Link to="/security">Security</Link>
+          <Link to={'contact-us'}>Contact Us</Link>
+          <Link to={"/terms"}>Terms and Condition</Link>
+          <Link to={"/policy"}>Privacy Policy</Link>
+          <Link to={"/security"}>Security</Link>
         </div>
     </div>
   )

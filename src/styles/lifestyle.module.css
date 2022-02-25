@@ -32,6 +32,7 @@
     flex: 0.7;
     border-right: 1px solid #e2e2e2;
     padding-right: 20px;
+    
 }
 
 .right_cont {
@@ -56,7 +57,7 @@
 }
 
 .author {
-    font-size: 14px;
+    font-size: 13px;
     color: #555;
 }
 
@@ -84,4 +85,65 @@
 
 .right_intro:hover {
     border-bottom: 1px solid #444;
+}
+
+.card_container {
+    display: flex;
+    border-top: 1px solid #e2e2e2;
+    padding-top: 30px;
+}
+
+.card_container a {
+    text-decoration: none;
+    color: #333;
+}
+
+.card_container a:hover {
+    border-bottom: 1px solid #333;
+}
+
+.card_left_container {
+    flex: 0.5;
+    margin-right: 20px;
+}
+
+.card_left_img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card_left_container a {
+    font-size: 17px;
+}
+
+.card_right_container {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    border-left: 1px solid #e2e2e2;
+}
+
+.card_right_container a {
+    font-size: 16px;
+}
+
+.card_right_img {
+    width: 100%;
+    object-fit: cover;
+    height: 100px;
+}
+
+.card {
+    display: flex;
+}
+
+.img {
+    flex: 0.3;
+}
+
+.card_cont {
+    flex: 0.7;
+    padding: 0 10px;
 }

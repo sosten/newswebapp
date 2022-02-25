@@ -3,7 +3,6 @@ const router = express.Router();
 const bcrypt = require('bcrypt');
 const userModel = require('../models/userModel');
 
-
 router.post('/user', async (req, res) => {
     const saltPassword = await bcrypt.genSalt(10);
     const securePassword = await bcrypt.hash(req.body.password, saltPassword);
@@ -36,6 +35,17 @@ router.get('/getusers', async (req, res) => {
     .catch(err =>{
         console.log(err)
         res.json({massage: "Users not found"})
+    })
+})
+
+router.get('/user/:id', async (req, res) => {
+    userModel.map(user => user.id === req.params.id)
+    .then(data =>{
+        res.json(data);
+    })
+    .catch(err =>{
+        console.log(err)
+        res.json({message: "User of this id not found"});
     })
 })
 

@@ -15,10 +15,52 @@ function Lifestyle() {
             <div className={style.container}>
                 <div className={style.cont_flex}>
                     <div className={style.left_cont}>
-                        <img src={iris} alt="iris" className={style.left_img} />
-                        <p><Link to={'/lifestyle-detail'} className={style.cate}>Lifestyle</Link></p>
-                        <h4><Link to={'/lifestyle-detail'} className={style.intro}>IRS To Drop Facial Scan ID.me Verification For Online Accounts</Link></h4>
-                        <p className={style.author}>By <b>Mandona</b> <span style={{color: '#737373', fontSize: 12}}>News Yatu staff</span></p>
+                        <div>
+                            <img src={iris} alt="iris" className={style.left_img} />
+                            <p><Link to={'/lifestyle-detail'} className={style.cate}>Lifestyle</Link></p>
+                            <h4><Link to={'/lifestyle-detail'} className={style.intro}>IRS To Drop Facial Scan ID.me Verification For Online Accounts</Link></h4>
+                            <p className={style.author}>By <b>Mandona</b> <span style={{color: '#737373', fontSize: 12}}>News Yatu staff</span></p>
+                        </div>
+                        <div className={style.card_container}>
+                            <div className={style.card_left_container}>
+                                <img src={iris} alt="iris" className={style.card_left_img}/>
+                                <Link to={'/lifestyle-detail'}>Lifestyle</Link>
+                                <h3><Link to={'/lifestyle-detail'}>IRS To Drop Facial Scan ID.me Verification For Online Accounts</Link></h3>
+                                <p className={style.author}>By <b>Mandona</b> <span style={{color: '#737373', fontSize: 12}}>News Yatu staff</span></p>
+                            </div>
+                            <div className={style.card_right_container}>
+                                <div className={style.card}>
+                                    <div className={style.img}>
+                                        <img src={iris} alt="iris" className={style.card_right_img}/>
+                                    </div>
+                                    <div className={style.card_cont}>
+                                        <p><Link to={'/lifestyle-detail'} className={style.cate}>Lifestyle</Link></p>
+                                        <h3><Link to={'/lifestyle-detail'}>IRS To Drop Facial Scan ID.me Verification For Online Accounts</Link></h3>
+                                        <p className={style.author}>By <b>Mandona</b> <span style={{color: '#737373', fontSize: 12}}>News Yatu staff</span></p>
+                                    </div>
+                                </div>
+                                <div className={style.card}>
+                                    <div className={style.img}>
+                                        <img src={iris} alt="iris" className={style.card_right_img}/>
+                                    </div>
+                                    <div className={style.card_cont}>
+                                        <p><Link to={'/lifestyle-detail'} className={style.cate}>Lifestyle</Link></p>
+                                        <h3><Link to={'/lifestyle-detail'}>IRS To Drop Facial Scan ID.me Verification For Online Accounts</Link></h3>
+                                        <p className={style.author}>By <b>Janet Jones</b> <span style={{color: '#737373', fontSize: 12}}>News Yatu staff</span></p>
+                                    </div>
+                                </div>
+                                <div className={style.card}>
+                                    <div className={style.img}>
+                                        <img src={iris} alt="iris" className={style.card_right_img}/>
+                                    </div>
+                                    <div className={style.card_cont}>
+                                        <p><Link to={'/lifestyle-detail'} className={style.cate}>Lifestyle</Link></p>
+                                        <h3><Link to={'/lifestyle-detail'}>IRS To Drop Facial Scan ID.me Verification For Online Accounts</Link></h3>
+                                        <p className={style.author}>By <b>Bianca Salonga</b> <span style={{color: '#737373', fontSize: 12}}>Contributor</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className={style.right_cont}>
                         <div className={style.right_card}>

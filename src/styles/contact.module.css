@@ -1,0 +1,143 @@
+.header {
+    background-color: #000;
+    margin: 0px !important;
+    padding: 0px !important;
+    border-top: 1px solid #f2f2f1;
+}
+
+.header_cont {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0 80px;
+}
+
+.header_cont h1 ,.header_cont p {
+    color: #fff;
+}
+
+.header_cont h1 {
+    font-size: 54px;
+    margin-top: -30px;
+}
+
+.header_cont p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.title_1 {
+    flex: 0.5;
+    width: 100%;
+}
+
+.title_2 {
+    flex: 0.5;
+    width: 100%;
+}
+
+.row {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.bg_img {
+    background-image: url('../assets/images/forbes.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    flex: 0.5;
+}
+
+.team {
+    padding: 20px;
+    flex: 0.5;
+    width: 100%;
+}
+
+.team h2 {
+    color: #333;
+    font-size: 30px;
+}
+
+.team p {
+    color: #333;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.team a {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #C2250E;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 2px 4px 2px rgb(0 0 0 / 20%);
+    border: 1px solid #C2250E;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.team a:hover {
+    opacity: 0.8;
+}
+
+.address {
+    flex: 0.5;
+    width: 100%;
+}
+
+.contact_form {
+    flex: 0.5;
+    width: 100%;
+}
+
+.contact_form {
+    padding: 10px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.contact_form input[type=text], .contact_form textarea {
+    width: 100%;
+    border: 1px solid #e2e2e2;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.contact_form input[type=submit] {
+    border: 1px solid #C2250E;
+    background-color: #C2250E;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.contact_form span {
+    font-size: 14px;
+    color: #555;
+}

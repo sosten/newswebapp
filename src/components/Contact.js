@@ -36,11 +36,11 @@ const Contact = () => {
           <div className={style.contact_form}>
             <form>
               <div className={style.name}>
-                <div>
+                <div className={style.fname}>
                   <label htmlFor="fname">First Name</label>
                   <input type="text" placeholder='First Name' id='fname' />
                 </div>
-                <div>
+                <div className={style.lname}>
                   <label htmlFor="lname">Last Name</label>
                   <input type="text" placeholder='Last Name' id='lname' />
                 </div>

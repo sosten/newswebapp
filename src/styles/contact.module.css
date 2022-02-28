@@ -112,6 +112,17 @@
     justify-content: space-between;
 }
 
+.fname {
+    flex: 0.5;
+    width: 100%;
+    margin-right: 40px;
+}
+
+.lname {
+    flex: 0.5;
+    width: 100%;
+}
+
 .contact_form label {
     display: block;
     font-size: 14px;
